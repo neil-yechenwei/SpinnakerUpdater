@@ -1,12 +1,11 @@
 #!/bin/bash
 
-PATH=$PATH:/home/iottest/.nvm/versions/node/v10.15.1/bin:/home/iottest/bin:/home/iottest/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin
+PATH=$PATH:~/.nvm/versions/node/v10.15.1/bin:~/bin:~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
 export PATH
 
 CURRENT_DATE=`date '+%Y_%m_%d'`
 CURRENT_DATE_TIME=`date '+%Y_%m_%d_%H_%M_%S'`
-CURRENT_WORKING_DIC=`pwd`
-DAILY_LOGS=${CURRENT_WORKING_DIC}/spinnaker_updater_logs/${CURRENT_DATE}
+DAILY_LOGS=~/spinnaker_updater_logs/${CURRENT_DATE}
 Message=""
 
 # Check the status of last command
