@@ -19,7 +19,8 @@ function CheckLastCommandStatus() {
   
   Message_Title=$1
   Message_Body=$(<$2)
-  Message+="[$JOB_STATUS][${Message_Title}]:\n${Message_Body}\n\n"
+  LogPath=$2
+  Message+="[$JOB_STATUS][${Message_Title}]:\n${Message_Body}\n[LogPath]:${LogPath}\n\n"
 }
 
 mkdir -p ${DAILY_LOGS}
